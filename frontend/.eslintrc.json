@@ -1,6 +1,11 @@
 {
-    //we'll get the rules for what the react app will look like and lint that
-    "entends": ["react-app", "plugin:prettier/recommended"],
+    "plugins": ["prettier"],
+    "extends": [
+        "react-app",
+        "plugin:prettier/recommended",
+        "prettier", 
+        "eslint::recommended"
+    ],
     "rules": {
         "prettier/prettier": [
             "error",
@@ -10,3 +15,17 @@
         ]
     }
 }
+
+// {
+//     //we'll get the rules for what the react app will look like and lint that
+//     "plugins": ["prettier"],
+//     "extends": ["react-app", "plugin:prettier/recommended"],
+//     "rules": {
+//         "prettier/prettier": [
+//             "error",
+//             {
+//                 "endOfLine": "auto"
+//             }
+//         ]
+//     }
+// }
